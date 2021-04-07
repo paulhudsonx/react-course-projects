@@ -15,7 +15,7 @@ export default class IndecisionApp extends React.Component {
   componentDidMount = () => {
 
     try {
-      console.log('fetching our data');
+      console.log('fetching data');
       const json = localStorage.getItem('options');
       console.log(`Options from storage ${json}`);
       const options = JSON.parse(json);
