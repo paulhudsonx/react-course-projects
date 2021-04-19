@@ -7,11 +7,6 @@ class ExpenseForm extends React.Component {
   constructor(props) {
     super(props);
 
-    console.log('Expense form +++');
-    console.log(props.expense);
-    console.log(moment(props.expense.createdAt));
-    console.log('Expense form ---');
-
     this.state = {
       description: props.expense ? props.expense.description : '',
       note: props.expense ? props.expense.note : '',
